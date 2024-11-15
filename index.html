@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Website</title>
+  <link rel="shortcut icon" href="157475988.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    /* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background: #f4f4f9;
+}
+
+/* Hero Section */
+header.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: white;
+}
+
+.name {
+  color: #ffe259;
+}
+
+.hero-subtitle {
+  margin: 20px 0;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #ffe259;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #ffcc33;
+}
+
+/* About Me Section */
+.section {
+  padding: 50px 20px;
+  background: white;
+  text-align: center;
+}
+
+#about {
+  background: #f9f9fb;
+  border-top: 5px solid #4facfe;
+  border-bottom: 5px solid #00f2fe;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  color: #4facfe;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Footer */
+footer.footer {
+  padding: 20px;
+  text-align: center;
+  background: #333;
+  color: white;
+}
+
+footer.footer p {
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+footer.footer a {
+  color: #00f2fe;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+footer.footer a:hover {
+  color: #ffe259;
+}
+
+
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1 class="hero-title">Hi, I'm <span class="name">Arik Al Ahsan</span></h1>
+    <p class="hero-subtitle">Web Developer | Professional Graphic Designer</p>
+    <a href="#about" class="btn">Learn More</a>
+  </header>
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        Who I am
+        I am a web developer with experience in HTML, CSS, JavaScript, and Python. I have worked on various projects ranging from small websites to complex web applications.
+    </p>
+  </section>
+  
+  <footer class="footer">
+    <p>© 2024 Arik Al Ahsan | Designed with ❤️</p>
+    <p>
+      Follow me on 
+      <a href="https://www.facebook.com/profile.php?id=61551544245642" target="_blank">Facebook</a>, 
+      <a href="https://github.com/Arikpro" target="_blank">GitHub</a>, or 
+      <a href="mailto:arikalahsan179@gmail.com">Email</a>.
+    </p>
+  </footer>
+  
+
+  <footer class="footer">
+    <p>© 2024 Arik Al Ahsan</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="script.js"></script>
+  <script>// GSAP Animations
+    gsap.from(".hero-title", { duration: 1, y: -50, opacity: 0 });
+    gsap.from(".hero-subtitle", { duration: 1, delay: 0.5, y: 50, opacity: 0 });
+    gsap.from(".btn", { duration: 1, delay: 1, scale: 0.8, opacity: 0 });
+    </script>
+</body>
+</html>
